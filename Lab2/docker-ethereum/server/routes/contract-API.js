@@ -11,7 +11,7 @@ router.post("/compile", async function (req, res, next) {
 
 // Deploy the contract
 router.post("/deploy", async function (req, res, next) {
-  const result = await deploy("Hello World, from Athika Fatima <3");
+  const result = await deploy("Hi Simarjeet Chawla");
   res.send(JSON.parse(result).address);
 });
 
