@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: "kompose convert -f docker-compose.yml"
+    kompose.version: "1.32.0 (HEAD)"
+  labels:
+    io.kompose.service: dapp
+  name: dapp
+spec:
+  replicas: 1 # Initial replicas, will be adjusted by HPA
+  selector:
+    matchLabels:
+      io.kompose.service: dapp
+  template:
+    metadata:
+      annotations:
+        kompose.cmd: "kompose convert -f docker-compose.yml"
+        kompose.version: "1.32.0 (HEAD)"
+      labels:
+        io.kompose.network/docker-ethereum-default: "true"
+        io.kompose.service: dapp
+    spec:
+      containers:
+        - image: athikaf/my-dapp:5.0
+          name: dapp
+          ports:
+            - containerPort: 4000
+              # hostPort: 4000
+              protocol: TCP
+          env:
+            - name: NODE_PORT
+              valueFrom:
+                configMapKeyRef:
+                  name: node-app-config
+                  key: NODE_PORT
+          resources:
+            requests:
+              memory: 64Mi
+              cpu: 250m
+            limits:
+              memory: 64Mi
+              cpu: 250m
+          volumeMounts:
+            - name: app-storage
+              mountPath: /var # Adjust the mount path based on your application's storage requirements
+      volumes:
+        - name: app-storage
+          persistentVolumeClaim:
+            claimName: app-pvc
+      restartPolicy: Always
