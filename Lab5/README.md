@@ -59,6 +59,12 @@
 <img width="1440" alt="Screenshot 2024-02-05 at 10 19 56 PM" src="https://github.com/athikaf/BCDV-4032_Building_Scalable_Blockchain_Apps/assets/69520002/6e588bd2-bc1c-4dd6-af2f-065cac763bf3">
 <img width="1440" alt="Screenshot 2024-02-05 at 10 20 04 PM" src="https://github.com/athikaf/BCDV-4032_Building_Scalable_Blockchain_Apps/assets/69520002/a398c83f-1470-412d-b21f-87066a066006">
 
+## Creating Custom Grafana Dashboard with 3 visualizations
+<img width="1440" alt="Screenshot 2024-02-05 at 11 43 55 PM" src="https://github.com/athikaf/BCDV-4032_Building_Scalable_Blockchain_Apps/assets/69520002/623e52e7-c957-4e65-8cac-bcbac3d151d0">
+<img width="1440" alt="Screenshot 2024-02-05 at 11 44 48 PM" src="https://github.com/athikaf/BCDV-4032_Building_Scalable_Blockchain_Apps/assets/69520002/a8bd7e91-392e-4647-9e51-0326e3cf7e6b">
+<img width="1440" alt="Screenshot 2024-02-05 at 11 49 21 PM" src="https://github.com/athikaf/BCDV-4032_Building_Scalable_Blockchain_Apps/assets/69520002/315be215-0cd1-4498-af01-c7266239fd2b">
+<img width="1440" alt="Screenshot 2024-02-05 at 11 49 25 PM" src="https://github.com/athikaf/BCDV-4032_Building_Scalable_Blockchain_Apps/assets/69520002/3f06c47b-c17d-4de5-b101-5b9e3e699391">
+
 
 
 ---
